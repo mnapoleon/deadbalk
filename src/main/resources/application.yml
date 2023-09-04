@@ -1,0 +1,14 @@
+spring:
+  r2dbc:
+    # username: sa
+    #password:
+    # url: r2dbc:h2:mem:///~/db/deadbalk
+    username: postgres
+    password: postgres
+    url: r2dbc:postgresql://localhost:5432/deadbalk
+  flyway:
+    url: jdbc:postgresql://localhost:5432/deadbalk
+    user: postgres
+    password: postgres
+    enabled: true
+    validate-on-migrate: true
